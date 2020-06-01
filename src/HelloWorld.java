@@ -10,7 +10,8 @@ public class HelloWorld {
 //        long myNumber = 123;
 //        System.out.println(myNumber);
         //long vars are integers and do not have floating decimals
-//        float myNumber = 3.14;
+//        float myNumber = 3.14f;
+        //can cast float myNumber = (float) 3.14; or 3.14f;
 //        double myNumberAllow = (double) myNumber;
         double myNumber = 3.14;
 //        int x = 5;
@@ -19,13 +20,16 @@ public class HelloWorld {
 //        int x = 5;
 //        System.out.println(++x);
 //        System.out.println(x);
-        //int class;
+        //String class;
+        //is a reserved keyword
         String theNumberThree = "three";
         Object o = theNumberThree;
         int three = (int) o;
+        //error 1: string cannot cast to int(numeric)
         //int three = (int) "three";
         //string
-        //two errors: variable already defined and cannot convert string to int
+        //error 2: here a string literal, class exception
+        //int three = (int) o; //produces class exception
 //        int x = 4;
 //        x += 5;
 //        int x = 3;
@@ -36,8 +40,14 @@ public class HelloWorld {
         x /= y;
         y -= x;
         //14:lost data
-
-
+        //sophie example:
+        byte randomNumber = 127;
+        System.out.println(++randomNumber);
+        //-128   sent to the beginning of the range, looped back
+        //++randomNumber will then produce -127
+        //randomNumber + 10    produced 137  incremintation takes into
+        //incremintation takes into account the data type, which has a range to deal with
+        //not so with addition of integers, no need to consider data type at that point
     }
 }
 //ctrl r
