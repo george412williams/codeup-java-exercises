@@ -23,8 +23,9 @@ public class HelloWorld {
         String theNumberThree = "three";
         Object o = theNumberThree;
         int three = (int) o;
+        //int three = (int) "three";
         //string
-        //two errors:
+        //two errors: variable already defined and cannot convert string to int
 //        int x = 4;
 //        x += 5;
 //        int x = 3;
