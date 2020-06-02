@@ -118,12 +118,15 @@ public class ConsoleIOLecture {
                 //
 
         // .nextInt() captures the first valid int value:
+
 //            System.out.print("Please enter your age: ");
 //            int age = sc.nextInt();
 //            System.out.println(age);
 
 
         // .nextLine():
+
+            //will take the token to the next line
 
 //            System.out.print("Favorite quote: ");
 //            String quote = sc.nextLine();
@@ -132,16 +135,24 @@ public class ConsoleIOLecture {
 
         // unexpected behaviour
 
-//            String word1 = sc.next();
-//            sc.nextLine(); // needed to clear out hitting enter
-//            String line1 = sc.nextLine();
-//            String word2 = sc.next();
-//            sc.nextLine(); // needed to clear out hitting enter
-//            String line2 = sc.nextLine();
+            //the frustrating part of .next
+        System.out.println("enter a word:");
+            String word1 = sc.next();
+
+            sc.nextLine(); // needed to clear out hitting enter
+            String line1 = sc.nextLine();
+            String word2 = sc.next();
+            sc.nextLine(); // needed to clear out hitting enter
+            String line2 = sc.nextLine();
+
+        System.out.printf("The word is: %s%nThe sentence is: ", word1, line1);
+            //does not work...bc:
+                //from enter giving a new line character, reads to next line the new line character and prevents input, so added line 142
 
 //            System.out.printf("%s%n%s%n%s%n%s%n", word1, line1, word2, line2);
 
         // check for presence of various data types
+            //using conditional logic from next lesson
 
 //            int userInt = 0;
 //            if (sc.hasNextInt()) {
