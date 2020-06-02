@@ -1,11 +1,13 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ConsoleIOLecture {
 
     public static void main(String[] args) {
 
-        System.out.println("Hello Ganymede!");
+        //System.out.println("Hello Ganymede!");
 
+//METHODS:
 
         // ================================== print() and println()
 
@@ -28,6 +30,8 @@ public class ConsoleIOLecture {
         // ================================== printf()
 
         // Print a formatted string using the following... printf(formatString, data)
+        //a lot like __ syntax, a lot like print with a single string passing
+        //good for adding diff vars together wo concat
 
         // same output as print():
 //            System.out.printf("Hello");
@@ -35,21 +39,38 @@ public class ConsoleIOLecture {
 
 
 
+
         // creating a string variable:
-//            String bigBall = "World";
-//            System.out.printf("Hello %s", bigBall);
-//            System.out.printf("Hello %S", bigBall); // all caps
+            String bigBall = "World";
+        System.out.printf("Hello %s", bigBall); //chars after % determine datatype, if string %s, display Hello World, similar to $ w ES6 template strings
+//            System.out.printf("Hello %S", bigBall); // all caps, can format here also, add new line character w %n, next line
+                                            // %d for decimal integers
 
         // multiple variables:
 //            int three = 3;
 //            String typeOfPetGroup = "cats";
 //            System.out.printf("I have %d %s.", three, typeOfPetGroup);
+                        //3.5 for int obv won't work, neither is double three = 3.5 bc of , three,...
+                        //instead of %d use %f   ...look at defs for both
+
+        //Curric further reading: format numeric output; encourage their reading; points to documentation, so many
+        //more things we can do, additional tools
+        //want two decimal places?   %.2f for example
 
         // currency:
 //            int currencyPennies = 1000;
 //            System.out.printf("I'll sell you swamp land for $%.2f an acre!", currencyPennies / 100.00);
+        //  ... for $10.00 and acre...
 
+        //printf good for: concating with no pluses and lots of vars included
 
+        //write a program that will print your name with a greeting
+        //Welcome, YOUR_NAME_HERE!
+
+        String name = "George Williams";
+        System.out.printf("Welcome, %s!", name);
+
+        //will be using souts a lot to console log check, referring to 'java console'; generally println for debugging: Justin
 
 
         // ================================== USER INPUT
