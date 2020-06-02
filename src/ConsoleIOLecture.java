@@ -165,6 +165,8 @@ public class ConsoleIOLecture {
 //                System.out.println("The user did not enter an integer");
 //            }
 
+        //you can capture things as strings and parse them to numbers down the line
+        //or you can parseInt up front
 
     }
 
