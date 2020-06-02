@@ -96,8 +96,10 @@ public class ConsoleIOLecture {
 //        System.out.println(userInput);
         //so you see Hello
 
-        String userInput = sc.next();
-        //int userInput = sc.nextInt();   //for numbers
+        //String userInput = sc.next();
+        //add a prompt for a number input:
+        System.out.println("Input a number:");
+        int userInput = sc.nextInt();   //for numbers
         System.out.println("Your input is: " + userInput); // userInput * 2); needs .nextInt()...
 
         //only need to create the drill once to use all its methods
@@ -140,6 +142,7 @@ public class ConsoleIOLecture {
             String word1 = sc.next();
 
             sc.nextLine(); // needed to clear out hitting enter
+        System.out.println("enter a word:");
             String line1 = sc.nextLine();
             String word2 = sc.next();
             sc.nextLine(); // needed to clear out hitting enter
