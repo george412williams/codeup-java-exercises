@@ -14,9 +14,28 @@ public class ConsoleExercises {
 //Prompt a user to enter a integer and store that value in an int variable using the nextInt method.
 
         Scanner sc = new Scanner(System.in);
-        System.out.print("");
-        //Int userInput = sc.nextInt();
+        //int userInput = sc.nextInt();
 
-    };
+//        System.out.println("Enter three words:");
+//        String word1 = sc.nextLine();
+//        String word2 = sc.nextLine();
+//        String word3 = sc.nextLine();
+//
+//        System.out.println("Enter a sentence:");
+//        String sentence = sc.nextLine();
+//        System.out.println(sentence);
+
+        System.out.println("Enter values of length and width of a classroom at Codeup in feet. Length:");
+        String roomLength = sc.nextLine();
+        System.out.println("width:");
+        String roomWidth = sc.nextLine();
+
+
+        int lengthInt = Integer.parseInt(roomLength);
+        int widthInt = Integer.parseInt(roomWidth);
+        int roomArea = lengthInt * widthInt;
+        int roomPerimeter = (lengthInt + widthInt) * 2;
+        System.out.printf("The area of the room is %s sqft, and the perimeter is %s ft.", roomArea, roomPerimeter);
+    }
 
 }

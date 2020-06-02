@@ -121,9 +121,9 @@ public class ConsoleIOLecture {
 
         // .nextInt() captures the first valid int value:
 
-//            System.out.print("Please enter your age: ");
-//            int age = sc.nextInt();
-//            System.out.println(age);
+            System.out.print("Please enter your age: ");
+            int age = sc.nextInt();
+            System.out.println(age);
 
 
         // .nextLine():
