@@ -75,18 +75,47 @@ public class ConsoleIOLecture {
 
         // ================================== USER INPUT
 
-//        Scanner sc = new Scanner(System.in);
+        //syntax sense later when creating obj's from classes, this code creates a new scanner tool for use
+        //points to files, input stream to console, can analyze all user input to console
+        //to do that define System.in to read things typed into console
+        //IJ says code won't work as is, referencing something not in the lang folder
+            //is in a package called java.util
+                //a tool to analyze input, import by import statement at top of class file, similar to es6(see top)
+                //changes code below from red(compile time error or java cannot find symbol) to good bc of import up top
+                //to make having so many imports faster, IJ short: optEnter to auto include the import
+                //will give option on where to import from, here want util package(parent dir)
 
+        Scanner sc = new Scanner(System.in);
+
+            //souting shows the mechanics of the tool
+            //if only have access to IJ, comB, for methods
+                //says token, basically meaning captures what the user inputs
+
+//        String userInput = sc.next();
+        //.next means up until the white space; .nextLine adds what is after the space
+//        System.out.println(userInput);
+        //so you see Hello
+
+        String userInput = sc.next();
+        //int userInput = sc.nextInt();   //for numbers
+        System.out.println("Your input is: " + userInput); // userInput * 2); needs .nextInt()...
+
+        //only need to create the drill once to use all its methods
 
         // .next() captures each input separated by whitespace:
-//            System.out.print("Please enter your first, middle, and last name: ");
-//            String firstName = sc.next();
-//            String lastName = sc.next();
-//            String what = sc.next();
-//
-//            System.out.println(firstName);
-//            System.out.println(lastName);
-//            System.out.println(what);
+            System.out.print("Please enter your first, middle, and last name: ");
+            String firstName = sc.next();
+            String lastName = sc.next();
+            String what = sc.next();
+
+            System.out.println(firstName);
+            System.out.println(lastName);
+            System.out.println(what);
+
+            //in console you type names, first name enter, enter gives a new line character and awaits next input of the three expected
+            //on last enter the program spits out all 3 from the souts below it
+
+                //
 
         // .nextInt() captures the first valid int value:
 //            System.out.print("Please enter your age: ");
