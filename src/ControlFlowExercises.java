@@ -3,6 +3,20 @@ import java.util.Arrays;
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
+    int i = 5;
+    while (i <= 15) {
+        System.out.print(" " + i++);
+    }
+
+
+
+
+
+
+
+
+
+//===========NOTES==========
 
         // ==================== Slide 3
 
@@ -10,9 +24,9 @@ public class ControlFlowExercises {
         // truthy and falsy values don't exist in Java
 
         //comparison
-        if (2 > 1 && true || false) {
-            System.out.println("this runs");
-        }
+//        if (2 > 1 && true || false) {
+//            System.out.println("this runs");
+//        }
         //if (2) {
         //System.out.println("this does not run"); throws exception bc:
     //}
