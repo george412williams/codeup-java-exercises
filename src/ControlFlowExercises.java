@@ -3,24 +3,41 @@ import java.util.Arrays;
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
-    long i = 2;
+    //      EX 2
+
+    for (int num = 1; num <= 100; num++) {
+
+        if (num%15==0) {
+            System.out.print("FizzBuzz" + " ");
+        }else if (num%3==0){
+            System.out.print("Fizz" + " ");
+        }else if (num%5==0){
+            System.out.print("Buzz" + " ");
+        }else{
+            System.out.print(num + " ");
+        }
+    }
+
+    //      EX 1
+
+//    long i = 2;
 
 //    while (i <= 15) {
 //        System.out.print(" " + i++);
 //    }
 
-    for (long i = 5; i <= 15; " " + i++) {
-        System.out.println(i);
-    }
+//    for (long i = 5; i <= 15; " " + i++) {
+//        System.out.println(i);
+//    }
 
 //    do {
 //        System.out.println(i);
 //        i *= i;
 //    } while (i < 1000000);
 
-    for (i; i < 1000000; i *= i) {
-        System.out.println(i);
-    }
+//    for (i; i < 1000000; i *= i) {
+//        System.out.println(i);
+//    }
 
 
 
