@@ -60,18 +60,18 @@ public class ControlFlowExercises {
 
     //      EX 2
 
-//    for (int num = 1; num <= 100; num++) {
-//
-//        if (num%15==0) {
-//            System.out.print("FizzBuzz" + " ");
-//        }else if (num%3==0){
-//            System.out.print("Fizz" + " ");
-//        }else if (num%5==0){
-//            System.out.print("Buzz" + " ");
-//        }else{
-//            System.out.print(num + " ");
-//        }
-//    }
+    for (int num = 1; num <= 100; num++) {
+
+        if (num%15==0) {
+            System.out.print("FizzBuzz" + " ");
+        }else if (num%3==0){
+            System.out.print("Fizz" + " ");
+        }else if (num%5==0){
+            System.out.print("Buzz" + " ");
+        }else{
+            System.out.print(num + " ");
+        }
+    }
 
     //      EX 1
 
@@ -101,23 +101,23 @@ public class ControlFlowExercises {
 
 // ex 1c/a/1
 
-    for (int i = 5; i <= 15; i++) {
-        System.out.println(i + " ");
-    }
-
-// ex 1c/a/2
-
-// ex 1c/a/3
-
-// ex 1c/b/1
-
-// ex 1c/b/2
-
-// ex 1c/b/3
-
-    for (int q = 0; q <= 100; q += 2) {
-        System.out.println(q);
-    }
+//    for (int i = 5; i <= 15; i++) {
+//        System.out.println(i + " ");
+//    }
+//
+//// ex 1c/a/2
+//
+//// ex 1c/a/3
+//
+//// ex 1c/b/1
+//
+//// ex 1c/b/2
+//
+//// ex 1c/b/3
+//
+//    for (int q = 0; q <= 100; q += 2) {
+//        System.out.println(q);
+//    }
 
 
 //===========NOTES==========
