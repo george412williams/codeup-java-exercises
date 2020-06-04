@@ -7,55 +7,52 @@ public class ControlFlowExercises {
 
     //      EX 4
 
-//    String resp = "";
-//    do {
-//        System.out.println("Enter Numeric grade 1 - 100:");
-//        long userGrade = sc.nextInt();
-//        if (userGrade <= 100 && userGrade >= 88) {
-//            System.out.println("A");
-//        }
-//        if (userGrade <= 87 && userGrade >= 80) {
-//            System.out.println("B");
-//        }
-//        if (userGrade <= 79 && userGrade >= 67) {
-//            System.out.println("C");
-//        }
-//        if (userGrade <= 66 && userGrade >= 60) {
-//            System.out.println("D");
-//        }
-//        if (userGrade <= 59 && userGrade >= 0) {
-//            System.out.println("F");
-//        }
-//        System.out.println("continue? y/n");
-//        resp = sc.next();
-//    }while(resp.equals("y"));
-
-
-
-
-
-    //      EX 3
     String resp = "";
     do {
-        System.out.println("Starting from 1, identify max of range:");
-        long userInput = sc.nextInt();
-        System.out.println("Number Table:");
-        //vars and math
-        long numSqr = userInput * userInput;
-        long numCub = userInput * userInput * userInput;
-        System.out.println("number\t| squared\t| cubed");
-        System.out.println("------\t| -------\t| -----");
-        long i;
+        System.out.println("Enter Numeric grade 1 - 100:");
+        long userGrade = sc.nextInt();
+        if (userGrade <= 100 && userGrade >= 88) {
+            System.out.println("A");
+        }
+        if (userGrade <= 87 && userGrade >= 80) {
+            System.out.println("B");
+        }
+        if (userGrade <= 79 && userGrade >= 67) {
+            System.out.println("C");
+        }
+        if (userGrade <= 66 && userGrade >= 60) {
+            System.out.println("D");
+        }
+        if (userGrade <= 59 && userGrade >= 0) {
+            System.out.println("F");
+        }
+        System.out.println("continue? y/n");
+        resp = sc.next();
+    }while(resp.equals("y"));
 
-        for (i = 1; i <= userInput; i++) {
-            System.out.println(i + "\t\t" + "| " + (i * i) + " \t\t" + "| " + (i * i * i));
-            if (i == 1) {
-                System.out.println("Would you like to continue? y/n:");
-            resp = sc.next();
-            }
-        }}while(resp.equals("y"));
+    //      EX 3
 
-
+//    String resp = "";
+//    do {
+//        System.out.println("Starting from 1, identify max range:");
+//        long userInput = sc.nextInt();
+//        System.out.println("Number Table:");
+//        long numSqr = userInput * userInput;
+//        long numCub = userInput * userInput * userInput;
+//        System.out.println("number\t| squared\t| cubed");
+//        System.out.println("------\t| -------\t| -----");
+//        long i;
+//
+//        for (i = 1; i <= userInput; i++) {
+//            System.out.println(i + "\t\t" + "| " + (i * i) + " \t\t" + "| " + (i * i * i)); //instru used %d to populate the table w %n", y, y*y, y*y*y);
+//            if (i == 1) {
+//                System.out.println("Would you like to continue? y/n:");
+//            resp = sc.next();
+//                if (resp.equals("n")) {
+//                    break;
+//                }
+//            }
+//        }}while(resp.equals("y"));
 
 
     //      EX 2
