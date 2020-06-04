@@ -8,7 +8,7 @@ public class Bob {
             System.out.println("Sure.");
         }else if (respBob.endsWith("!")) {
             System.out.println("Whoa, chill out!");
-        }else if (respBob.length() == 0) {
+        }else if (respBob.equals("")) {
             System.out.println("Fine. Be that way!");
         }else{
             System.out.println("Whatever.");
