@@ -81,15 +81,23 @@ public class ControlFlowExercises {
 //        System.out.print(" " + i++);
 //    }
 
-    int q = 0;
-    do {
-        System.out.println(q);
-        q += 2;
-    } while (q <= 100);
+//    int q = 0;
+//    do {
+//        System.out.println(q);
+//        q += 2;
+//    } while (q <= 100);
 
-//    for (q; q < 1000000; i *= i) {
-//        System.out.println(i);
-//    }
+//    int p = 100;
+//    do {
+//        System.out.println(p);
+//        p -= 5;
+//    } while (q >= -10);
+
+    long f = 2;
+    do{
+        System.out.println(f);
+        f *= f;
+    }while(f < 1000000);
 
 
 
