@@ -4,7 +4,7 @@ public class Bob {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String respBob = sc.next();
-
+        System.out.println("This is Bob.");
         if (respBob.endsWith("?")) {
             System.out.println("Sure.");
         }else
