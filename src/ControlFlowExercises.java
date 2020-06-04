@@ -7,28 +7,28 @@ public class ControlFlowExercises {
 
     //      EX 4
 
-    String resp = "";
-    do {
-        System.out.println("Enter Numeric grade 1 - 100:");
-        long userGrade = sc.nextInt();
-        if (userGrade <= 100 && userGrade >= 88) {
-            System.out.println("A");
-        }
-        if (userGrade <= 87 && userGrade >= 80) {
-            System.out.println("B");
-        }
-        if (userGrade <= 79 && userGrade >= 67) {
-            System.out.println("C");
-        }
-        if (userGrade <= 66 && userGrade >= 60) {
-            System.out.println("D");
-        }
-        if (userGrade <= 59 && userGrade >= 0) {
-            System.out.println("F");
-        }
-        System.out.println("continue? y/n");
-        resp = sc.next();
-    }while(resp.equals("y"));
+//    String resp = "";
+//    do {
+//        System.out.println("Enter Numeric grade 1 - 100:");
+//        long userGrade = sc.nextInt();
+//        if (userGrade <= 100 && userGrade >= 88) {
+//            System.out.println("A");
+//        }
+//        if (userGrade <= 87 && userGrade >= 80) {
+//            System.out.println("B");
+//        }
+//        if (userGrade <= 79 && userGrade >= 67) {
+//            System.out.println("C");
+//        }
+//        if (userGrade <= 66 && userGrade >= 60) {
+//            System.out.println("D");
+//        }
+//        if (userGrade <= 59 && userGrade >= 0) {
+//            System.out.println("F");
+//        }
+//        System.out.println("continue? y/n");
+//        resp = sc.next();
+//    }while(resp.equals("y"));
 
 
 
@@ -75,21 +75,21 @@ public class ControlFlowExercises {
 
     //      EX 1
 
-//    long i = 2;
+    long i = 5;
 
-//    while (i <= 15) {
-//        System.out.print(" " + i++);
-//    }
+    while (i <= 15) {
+        System.out.print(" " + i++);
+    }
 
-//    for (long i = 5; i <= 15; " " + i++) {
+//    for (long i = 5; i <= 15; i++) {
 //        System.out.println(i);
 //    }
-
+//
 //    do {
 //        System.out.println(i);
 //        i *= i;
 //    } while (i < 1000000);
-
+//
 //    for (i; i < 1000000; i *= i) {
 //        System.out.println(i);
 //    }
