@@ -93,22 +93,31 @@ public class ControlFlowExercises {
 //        p -= 5;
 //    } while (q >= -10);
 
-    long f = 2;
-    do{
-        System.out.println(f);
-        f *= f;
-    }while(f < 1000000);
+//    long f = 2L;//L is for long and is good practice to add for safety
+//    do{
+//        System.out.println(f);
+//        f *= f;
+//    }while(f < 1000000);
 
+// ex 1c/a/1
 
+    for (int i = 5; i <= 15; i++) {
+        System.out.println(i + " ");
+    }
 
+// ex 1c/a/2
 
+// ex 1c/a/3
 
+// ex 1c/b/1
 
+// ex 1c/b/2
 
+// ex 1c/b/3
 
-
-
-
+    for (int q = 0; q <= 100; q += 2) {
+        System.out.println(q);
+    }
 
 
 //===========NOTES==========
