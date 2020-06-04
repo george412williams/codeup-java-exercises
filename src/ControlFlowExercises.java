@@ -11,20 +11,58 @@ public class ControlFlowExercises {
     do {
         System.out.println("Enter Numeric grade 1 - 100:");
         long userGrade = sc.nextInt();
-        if (userGrade <= 100 && userGrade >= 88) {
+        //A
+        if (userGrade <= 100 && userGrade >= 98) {
+            System.out.println("A+");
+        }
+        if (userGrade <= 97 && userGrade >= 93) {
             System.out.println("A");
         }
-        if (userGrade <= 87 && userGrade >= 80) {
-            System.out.println("B");
+        if (userGrade <= 92 && userGrade >= 88) {
+            System.out.println("A-");
         }
-        if (userGrade <= 79 && userGrade >= 67) {
+
+        //B
+        if (userGrade <= 87 && userGrade >= 86) {
+            System.out.println("B+");
+        }
+        if (userGrade <= 85 && userGrade >= 80) {
+            System.out.println("B");
+        }        if (userGrade <= 84 && userGrade >= 80) {
+            System.out.println("B-");
+        }
+
+        //C
+        if (userGrade <= 79 && userGrade >= 77) {
+            System.out.println("C+");
+        }
+        if (userGrade <= 76 && userGrade >= 71) {
             System.out.println("C");
         }
-        if (userGrade <= 66 && userGrade >= 60) {
+        if (userGrade <= 70 && userGrade >= 67) {
+            System.out.println("C-");
+        }
+
+        //D
+        if (userGrade <= 66 && userGrade >= 65) {
+            System.out.println("D+");
+        }
+        if (userGrade <= 64 && userGrade >= 62) {
             System.out.println("D");
         }
-        if (userGrade <= 59 && userGrade >= 0) {
+        if (userGrade <= 61 && userGrade >= 60) {
+            System.out.println("D-");
+        }
+
+        //F
+        if (userGrade <= 59 && userGrade >= 55) {
+            System.out.println("F+");
+        }
+        if (userGrade <= 54 && userGrade >= 40) {
             System.out.println("F");
+        }
+        if (userGrade <= 39 && userGrade >= 0) {
+            System.out.println("F-");
         }
         System.out.println("continue? y/n");
         resp = sc.next();
