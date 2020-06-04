@@ -35,43 +35,43 @@ public class ControlFlowExercises {
 
 
     //      EX 3
-//    String resp = "";
-//    do {
-//        System.out.println("Starting from 1, identify max of range:");
-//        long userInput = sc.nextInt();
-//        System.out.println("Number Table:");
-//        //vars and math
-//        long numSqr = userInput * userInput;
-//        long numCub = userInput * userInput * userInput;
-//        System.out.println("number\t| squared\t| cubed");
-//        System.out.println("------\t| -------\t| -----");
-//        long i;
-//
-//        for (i = 1; i <= userInput; i++) {
-//            System.out.println(i + "\t\t" + "| " + (i * i) + " \t\t" + "| " + (i * i * i));
-//            if (i == 1) {
-//                System.out.println("Would you like to continue? y/n:");
-//            resp = sc.next();
-//            }
-//        }while(resp.equals("y"));
+    String resp = "";
+    do {
+        System.out.println("Starting from 1, identify max of range:");
+        long userInput = sc.nextInt();
+        System.out.println("Number Table:");
+        //vars and math
+        long numSqr = userInput * userInput;
+        long numCub = userInput * userInput * userInput;
+        System.out.println("number\t| squared\t| cubed");
+        System.out.println("------\t| -------\t| -----");
+        long i;
+
+        for (i = 1; i <= userInput; i++) {
+            System.out.println(i + "\t\t" + "| " + (i * i) + " \t\t" + "| " + (i * i * i));
+            if (i == 1) {
+                System.out.println("Would you like to continue? y/n:");
+            resp = sc.next();
+            }
+        }}while(resp.equals("y"));
 
 
 
 
     //      EX 2
 
-    for (int num = 1; num <= 100; num++) {
-
-        if (num%15==0) {
-            System.out.print("FizzBuzz" + " ");
-        }else if (num%3==0){
-            System.out.print("Fizz" + " ");
-        }else if (num%5==0){
-            System.out.print("Buzz" + " ");
-        }else{
-            System.out.print(num + " ");
-        }
-    }
+//    for (int num = 1; num <= 100; num++) {
+//
+//        if (num%15==0) {
+//            System.out.print("FizzBuzz" + " ");
+//        }else if (num%3==0){
+//            System.out.print("Fizz" + " ");
+//        }else if (num%5==0){
+//            System.out.print("Buzz" + " ");
+//        }else{
+//            System.out.print(num + " ");
+//        }
+//    }
 
     //      EX 1
 
