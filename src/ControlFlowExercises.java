@@ -75,22 +75,19 @@ public class ControlFlowExercises {
 
     //      EX 1
 
-    long i = 5;
-
-    while (i <= 15) {
-        System.out.print(" " + i++);
-    }
-
-//    for (long i = 5; i <= 15; i++) {
-//        System.out.println(i);
+//    long i = 5;
+//
+//    while (i <= 15) {
+//        System.out.print(" " + i++);
 //    }
-//
-//    do {
-//        System.out.println(i);
-//        i *= i;
-//    } while (i < 1000000);
-//
-//    for (i; i < 1000000; i *= i) {
+
+    int q = 0;
+    do {
+        System.out.println(q);
+        q += 2;
+    } while (q <= 100);
+
+//    for (q; q < 1000000; i *= i) {
 //        System.out.println(i);
 //    }
 
