@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class MethodsExercises {
 
@@ -77,7 +78,6 @@ public class MethodsExercises {
         System.out.printf("Enter a number between 1 and 10: ");
         Scanner sc = new Scanner(System.in);
         int userNumber = sc.nextInt();
-
         long fact = 1;
         for (int i = 1; i <= userNumber; i++) {
             fact *= i;
@@ -97,7 +97,23 @@ public class MethodsExercises {
 
     //4
 
+    public static int pairDiceRoll (int s) {
+        System.out.print("Enter number of sides for dice pair (20 max): ");
+        Scanner sc = new Scanner(System.in);
+        int sidesNumber = sc.nextInt();
+        System.out.print("Enter 1 to roll: ");
+        int rollEm = sc.nextInt();
+        int min = 1;
+        int max = sidesNumber;
+        if (rollEm == 1){
+            Random rand = new Random();
+            int randRoll1 = rand.nextInt(sidesNumber);
+            int randRoll2 = rand.nextInt(sidesNumber);
+            System.out.println((sidesNumber * randRoll1) + (sidesNumber * randRoll2));
+        }
 
+        return sidesNumber;
+    }
 
     //5
 
@@ -120,6 +136,7 @@ public class MethodsExercises {
         System.out.print("Enter a number between 1 and 10: ");
         int userInput = getInteger(1, 10);
         numberFactorial(userInput);
+        pairDiceRoll(userInput);
 
 
     }
