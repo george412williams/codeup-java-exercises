@@ -65,7 +65,7 @@ public class MethodsExercises {
         if (userInput < min || userInput > max) {
             System.out.println("Please try again.");
             //call it again to ask again
-            return getInteger(1, 10);
+            return getInteger(min, max);
         } else {
             System.out.println("Input accepted.");
         }
@@ -73,7 +73,27 @@ public class MethodsExercises {
     }
     //3
 
+    public static long numberFactorial (long n) {
+        System.out.printf("Enter a number between 1 and 10: ");
+        Scanner sc = new Scanner(System.in);
+        int userNumber = sc.nextInt();
 
+        long fact = 1;
+        for (int i = 1; i <= userNumber; i++) {
+            fact *= i;
+        System.out.println(i + "! = " + fact);
+        }
+        return userNumber;
+    }
+
+
+//        do {
+//
+//        } while (n <= userNumber);
+//        return userNumber;
+//    }
+
+        //getInteger(1, 10);
 
     //4
 
@@ -86,6 +106,9 @@ public class MethodsExercises {
     //bonus
 
 
+
+    //main
+
     public static void main(String[] args) {
         //1
         System.out.println(add(2, 3));
@@ -96,6 +119,7 @@ public class MethodsExercises {
         //2
         System.out.print("Enter a number between 1 and 10: ");
         int userInput = getInteger(1, 10);
+        numberFactorial(userInput);
 
 
     }
