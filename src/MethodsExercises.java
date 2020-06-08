@@ -30,11 +30,14 @@ public class MethodsExercises {
     int userInput = sc.nextInt();
 
     public static int getInteger(int min, int max){
-//        System.out.print("Enter a number between 1 and 10: ");
-//        int userInput = getInteger(1, 10);
-        if (min >= userInput && max <= userInput){
-            System.out.println("Please try again.");
+        System.out.print("Enter a number between 1 and 10: ");
+        int userInput = getInteger(1, 10);
+        if (min <= userInput && max >= userInput){
+            System.out.println("Input accepted.");
+
         }
+            System.out.println("Please try again.");
+        return userInput;
     }
 
     //3
