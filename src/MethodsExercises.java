@@ -77,15 +77,18 @@ public class MethodsExercises {
     public static long numberFactorial (long n) {
         System.out.printf("Enter a number between 1 and 10: ");
         Scanner sc = new Scanner(System.in);
-        int userNumber = sc.nextInt();
+        int userNumber = sc.nextInt();//getInteger(min, max);
+        //answer.sc.....
         long fact = 1;
         for (int i = 1; i <= userNumber; i++) {
             fact *= i;
+            //if else to add if number is less than user pring i + x else i + = + factorialrecussion(number);
         System.out.println(i + "! = " + fact);
         }
         return userNumber;
     }
 
+//
 
 //        do {
 //
@@ -98,6 +101,7 @@ public class MethodsExercises {
     //4
 
     public static int pairDiceRoll (int s) {
+        //pairDiceRoll(getInteger(1, 20));  //previous prompt
         System.out.print("Enter number of sides for dice pair (20 max): ");
         Scanner sc = new Scanner(System.in);
         int sidesNumber = sc.nextInt();
@@ -107,13 +111,16 @@ public class MethodsExercises {
         int max = sidesNumber;
         if (rollEm == 1){
             Random rand = new Random();
-            int randRoll1 = rand.nextInt(sidesNumber);
+            int randRoll1 = rand.nextInt(sidesNumber);//(int)(Math.random() * sides) + 1;
             int randRoll2 = rand.nextInt(sidesNumber);
-            System.out.println((sidesNumber * randRoll1) + (sidesNumber * randRoll2));
-        }
+            System.out.println("Dice total = " + ((sidesNumber * randRoll1) + (sidesNumber * randRoll2)));
+        } //else loop back ask for sidesNumber
 
         return sidesNumber;
     }
+
+    //instr put 4 in the main method w a dowhile loop
+
 
     //5
 
