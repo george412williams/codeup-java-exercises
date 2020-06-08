@@ -21,25 +21,56 @@ public class MethodsExercises {
         return num1 % num2;
     }
 
-    //1 - recursion
+    public static double loopMultiply(double a, double b) {
+        double result = 0;
+        for (double i = 0; i < a; i++) {
+            result += b;
+        }
+        return result;
+    }
+
+    //inst made a testArith method to test as a main, then called testArith in main
+
+    //1 - recursion: instructor solutions
+
+    public static double recursiveMultiply (double a, double b){
+        if(a == 0 || b == 0) {
+            return 0;
+        }
+        return a + recursiveMultiply(a, b-1);
+    }
 
     //2
 
-    Scanner sc = new Scanner(System.in);
-
-    int userInput = sc.nextInt();
-
-    public static int getInteger(int min, int max){
-        System.out.print("Enter a number between 1 and 10: ");
-        int userInput = getInteger(1, 10);
-        if (min <= userInput && max >= userInput){
-            System.out.println("Input accepted.");
-
-        }
+    //mine:
+//    public static int getInteger(int min, int max) {
+//        Static Scanner sc = new Scanner(System.in);
+//        //int userInput = sc.nextInt();
+//        System.out.print("Enter a number between 1 and 10: ");
+//        int userInput = getInteger(1, 10);
+//        if (min <= userInput && max >= userInput) {
+//            System.out.println("Input accepted.");
+//
+//        } else {
+//            System.out.println("Please try again.");
+//        }
+//            return userInput;
+//    }
+    //instru:
+    public static int getInteger(int min, int max) {
+        Scanner sc = new Scanner(System.in);
+        int userInput = sc.nextInt();
+        System.out.printf("Enter a number between %d and %d: ", min, max);
+        //int userInput = getInteger(1, 10);
+        if (userInput < min || userInput > max) {
             System.out.println("Please try again.");
+            //call it again to ask again
+            return getInteger(1, 10);
+        } else {
+            System.out.println("Input accepted.");
+        }
         return userInput;
     }
-
     //3
 
 
@@ -65,6 +96,7 @@ public class MethodsExercises {
         //2
         System.out.print("Enter a number between 1 and 10: ");
         int userInput = getInteger(1, 10);
+
 
     }
 }
