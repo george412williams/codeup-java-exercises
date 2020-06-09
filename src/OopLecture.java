@@ -1,4 +1,16 @@
+//package OopLecture;
 import java.util.Scanner;
+//in order to bring in other classes in other packages you just import
+    //Associated classes:
+        //madlib directory
+        //Arithmetic.java
+        //Dog.java
+        //DogHelper.java
+        //OopLecture.java
+        //Person.java
+        //Student.java
+
+
 
 public class OopLecture {
     //NOTE: cannot def a class as static: bonus: why?

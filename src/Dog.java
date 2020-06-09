@@ -1,4 +1,4 @@
-//package oopLecture;
+//package OopLecture;
 
 public class Dog {
 
