@@ -50,6 +50,40 @@ public class Post {
                 //make method that searches through and pulls out that info, all kinds of special things with posts
 
         //note again static field particulart to the app, and nonstatic is specific to that post, unique
+
+        //if set to private make settersgetters:
+
+//        public void setTitle(String title) {
+//            this.title = title;
+//        }
+//
+//        public String getTitle() {
+//            return this.title;
+//        }
+
+            //this is not extemporaneous, useful down the line
+            //often best used with a User class
+            //instead of storing plaintext pw's, could private them:
+                //when create the obj, may choose to hash the pw
+                //create setter for the user
+                //public void setPassword(String passwor) {
+                //  before save to db need to hash it
+                //  this password = Password.hash(password); //operation that transforms the value instead of auto assigned
+                    //if have mult parts of code manip's user data, have to keep track of hashing pw
+                    //changes happen in one place
+                    //good example of transforming data:
+                        //private String password;
+
+                        //public void setPassword(String password){this.password = Password.hash();}
+
+                        //gettersetters cannot be private, what's the point, and always void
+                        //are gettersetters universal? you can define one. nothing really prevents making a setter for mult things
+                                //public void getAll(String name; String firstName; .....)
+                            //intellij can also create gettersetters same as generating constructor
+
+
+                //}
+
     }
 
 }

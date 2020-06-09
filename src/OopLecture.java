@@ -154,6 +154,7 @@ public class OopLecture {
 
         // ======================== slide 8 (constructors)
 
+        //add a constructor in the Student class
 //            Student jane = new Student("Jane Doe", "Zion");
 //            System.out.print(jane.name + " - ");
 //            System.out.println(jane.cohort); // prints "Jane Doe - Zion"
