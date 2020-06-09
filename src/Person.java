@@ -22,7 +22,7 @@ public class Person {
 
 
         // SLIDE 7
-//        public static long worldPopulation = 7_500_000_000L; // class property
+//        public static long worldPopulation = 7_500_000_000L; // class property, underscores translate as commas in numbers
 //        public String name;                                  // instance property
 //
 //        public static void main(String[] args) {
@@ -32,10 +32,11 @@ public class Person {
 //                System.out.println(worldPopulation);
 //
 //
-//                Person theBestDrummerAlive = new Person();
-//                theBestDrummerAlive.name = "Neil Peart";
-//                Person.worldPopulation += 1; // accessing a static property
-//                // this also works, but is usually not a good idea
+//                Person theBestDrummerAlive = new Person(); //est an obj
+//                theBestDrummerAlive.name = "Neil Peart"; //specific to an instance of the class, thousand people w diff names...
+//                Person.worldPopulation += 1; // accessing a static property, adding add'l person
+//                // this also works, but is usually not a good idea: refering to a static ina nonstatic way, can be confusing bc you will not see a capital letter indication
+                        //will not work the othe way around, must create an instance of a Person
 //                System.out.println(theBestDrummerAlive.worldPopulation); // 7500000001
 //                // DONT DO THIS, it will not compile
 ////                 System.out.println(Person.name);

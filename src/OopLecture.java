@@ -112,7 +112,10 @@ public class OopLecture {
 
         // -- DogHelper Example --
 
+        //how refer to :
 
+        //sout(Doghelper.NUMBER_OF_DOG_BREEDS); //consoles the number in the doghelper class file
+        //listing categories good for static
 
 
         // ======================== slide 7 (class vs. object fields)
