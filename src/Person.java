@@ -23,7 +23,7 @@ public class Person {
 
         // SLIDE 7
 //        public static long worldPopulation = 7_500_000_000L; // class property, underscores translate as commas in numbers
-//        public String name;                                  // instance property
+        public String name;                                  // instance property
 //
 //        public static void main(String[] args) {
 //

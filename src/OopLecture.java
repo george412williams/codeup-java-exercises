@@ -1,5 +1,6 @@
 //package OopLecture;
 import java.util.Scanner;
+import java.util.Date;
 //in order to bring in other classes in other packages you just import
     //Associated classes:
         //madlib directory
@@ -130,6 +131,25 @@ public class OopLecture {
 //            System.out.println(theBestDrummerAlive.worldPopulation); // 7500000001
 //            System.out.println(theBestDrummerAlive.name);
 
+
+        //add'l static notes
+            //blog posting
+            //
+
+        Person person = new Person();
+        person.name = "John Smith"; //from Person class
+
+        Post p = new Post();
+        p.category = "Funny";
+        p.title = "A Day in the Live";
+        p.content = "I am what i..";
+        p.createdAt = new Date();  //default here is today's date
+        p.editedAt = new Date();
+        //what is the var name holding this thing?
+        p.author = person; //assigning entire person object as a property
+
+        //give you the ability to dig farther in and get more info about the author with age property like:
+        System.out.println(p.author);
 
 
         // ======================== slide 8 (constructors)
