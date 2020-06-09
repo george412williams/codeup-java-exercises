@@ -66,7 +66,7 @@ public class Post {
             //instead of storing plaintext pw's, could private them:
                 //when create the obj, may choose to hash the pw
                 //create setter for the user
-                //public void setPassword(String passwor) {
+                //public void setPassword(String password) {
                 //  before save to db need to hash it
                 //  this password = Password.hash(password); //operation that transforms the value instead of auto assigned
                     //if have mult parts of code manip's user data, have to keep track of hashing pw
