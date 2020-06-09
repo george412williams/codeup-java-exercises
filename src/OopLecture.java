@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class oppLecture {
+public class OopLecture {
 
 
     public static void main(String[] args) {
