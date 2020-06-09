@@ -4,18 +4,19 @@ public class Person {
 //        // SLIDE 3
 //        public String firstName;
 //        public String lastName;
+//        public Integer age;
 //how do we create a person object thing?
 
         // SLIDE 4
 
 //        // instance variables
-//        public String firstName;
-//        public String lastName;
+        public String firstName;
+        public String lastName;
 //
 //        // instance method
-//        public String sayHello() {
-//                return lastName + ", " + firstName + " says hi!";
-//        }
+        public String sayHello() {
+                return lastName + ", " + firstName + " says hi!";
+        }
 
 
         // SLIDE 7
