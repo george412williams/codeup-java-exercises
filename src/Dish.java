@@ -15,7 +15,21 @@ public class Dish {
         this.costInCents = costInCents;
     }
 
+    public String getNameOfDish(String nameOfDish) {
+        return nameOfDish;
+    }
 
+    public void setNameOfDish(String nameOfDish) {
+        this.nameOfDish = nameOfDish;
+    }
+
+    public boolean getWouldRecommend(){
+        return wouldRecommend;
+    }
+
+    public void setWouldRecommend(boolean wouldRecommend) {
+        this.wouldRecommend = wouldRecommend;
+    }
 
 
 }

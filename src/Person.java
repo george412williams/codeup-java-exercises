@@ -2,6 +2,23 @@
 
 public class Person {
 
+        private String name;
+
+        public String getName(String name){
+//TODOne: return the person's name
+                return name;
+        }
+
+        public void setName(String name){
+//TODO: change the name property to the passed value
+                this.name = name;
+        }
+        public void sayHello(){
+//TODO: print a message to the console using the person's name
+                System.out.println(name);
+        }
+
+//LECTURE NOTES:
 
 //        // SLIDE 3
 //        public String firstName;
@@ -12,25 +29,22 @@ public class Person {
         // SLIDE 4
 
 //        // instance variables
-        public String firstName;
-        public String lastName;
+//        public String firstName;
+//        public String lastName;
 //
 //        // instance method
-        public String sayHello() {
-                return lastName + ", " + firstName + " says hi!";
-        }
-
+//        public String sayHello() {
+//                return lastName + ", " + firstName + " says hi!";
+//        }
 
         // SLIDE 7
 //        public static long worldPopulation = 7_500_000_000L; // class property, underscores translate as commas in numbers
-        public String name;                                  // instance property
 //
 //        public static void main(String[] args) {
 //
 //                System.out.println(Person.worldPopulation);
 //                Person.worldPopulation -= 1;
 //                System.out.println(worldPopulation);
-//
 //
 //                Person theBestDrummerAlive = new Person(); //est an obj
 //                theBestDrummerAlive.name = "Neil Peart"; //specific to an instance of the class, thousand people w diff names...
