@@ -15,8 +15,22 @@ public class Person {
         }
         public void sayHello(){
 //TODO: print a message to the console using the person's name
-                System.out.println(name);
+                System.out.println("Hello, " + name + "!");
         }
+//The class should have a constructor that accepts a `String` value and sets
+//the person's name to the passed string.
+//
+//Create a `main` method on the class that creates a new `Person` object and
+//tests the above methods.
+
+        public String name (String name) {
+                return name;
+        }
+
+        public static void main(String[] args) {
+                Person individual1 = new Person();
+        }
+
 
 //LECTURE NOTES:
 
