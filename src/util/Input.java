@@ -17,7 +17,7 @@ public class Input {
     public void getString(){
         System.out.println("Please type in a string.");
         String userBoolean = scanner.nextLine();
-        System.out.println();
+
     }
 
     //public void ... need to validate users input back atem

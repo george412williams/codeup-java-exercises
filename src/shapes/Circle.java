@@ -2,7 +2,11 @@ package shapes;
 
 public class Circle {
 
-    private long radius;
+    private double radius;
+
+    //radius getter and setter next
+
+
 
 //    public Circle(double radius);
 //    public double getArea();

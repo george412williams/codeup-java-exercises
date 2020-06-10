@@ -10,11 +10,11 @@ public class Person {
         }
 
         public void setName(String name){
-//TODO: change the name property to the passed value
+//TODOne: change the name property to the passed value
                 this.name = name;
         }
         public void sayHello(){
-//TODO: print a message to the console using the person's name
+//TODOne: print a message to the console using the person's name
                 System.out.println("Hello, " + name + "!");
         }
 //The class should have a constructor that accepts a `String` value and sets
