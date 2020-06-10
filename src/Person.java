@@ -4,7 +4,7 @@ public class Person {
 
         private String name;
 
-        public String getName(String name){
+        public String getName(){
 //TODOne: return the person's name
                 return name;
         }
@@ -23,12 +23,19 @@ public class Person {
 //Create a `main` method on the class that creates a new `Person` object and
 //tests the above methods.
 
-        public String name (String name) {
-                return name;
+        public Person (String name) {
+                this.name = name;
         }
 
         public static void main(String[] args) {
-                Person individual1 = new Person();
+                Person individual1 = new Person("Don");
+                Person person1 = new Person("John");
+                Person person2 = person1;
+                System.out.println(person1.getName());
+                System.out.println(person2.getName());
+                person2.setName("Jane");
+                System.out.println(person1.getName());
+                System.out.println(person2.getName());
         }
 
 

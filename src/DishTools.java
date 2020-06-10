@@ -1,5 +1,5 @@
 public class DishTools {
 
-    public static int AVERAGE_COST
+    //public static int AVERAGE_COST
 
 }

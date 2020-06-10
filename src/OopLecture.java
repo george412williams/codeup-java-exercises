@@ -86,10 +86,10 @@ public class OopLecture {
 
         // ======================== slide 4 (object fields)
 
-            Person rick = new Person();
-            rick.firstName = "Rick";
-            rick.lastName = "Sanchez";
-            System.out.println(rick.sayHello());
+//            Person rick = new Person();
+//            rick.firstName = "Rick";
+//            rick.lastName = "Sanchez";
+//            System.out.println(rick.sayHello());
                 //this sout invokes the method, instead of name property its a method with ()
                 //return type is string
 
@@ -136,8 +136,8 @@ public class OopLecture {
             //blog posting
             //
 
-        Person person = new Person();
-        person.name = "John Smith"; //from Person class
+//        Person person = new Person();
+//        person.name = "John Smith"; //from Person class
 
         Post p = new Post();
         p.category = "Funny";
@@ -146,7 +146,7 @@ public class OopLecture {
         p.createdAt = new Date();  //default here is today's date
         p.editedAt = new Date();
         //what is the var name holding this thing?
-        p.author = person; //assigning entire person object as a property
+//        p.author = person; //assigning entire person object as a property
 
         //give you the ability to dig farther in and get more info about the author with age property like:
         System.out.println(p.author);
