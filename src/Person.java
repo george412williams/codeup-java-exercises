@@ -2,21 +2,8 @@
 
 public class Person {
 
-        private String name;
+        private String name;//instance property of name
 
-        public String getName(){
-//TODOne: return the person's name
-                return name;
-        }
-
-        public void setName(String name){
-//TODOne: change the name property to the passed value
-                this.name = name;
-        }
-        public void sayHello(){
-//TODOne: print a message to the console using the person's name
-                System.out.println("Hello, " + name + "!");
-        }
 //The class should have a constructor that accepts a `String` value and sets
 //the person's name to the passed string.
 //
@@ -25,10 +12,56 @@ public class Person {
 
         public Person (String name) {
                 this.name = name;
+                //q; could this be used to compress data? a; can add a serializable option to class
+                // in web dev you'll see java beans that helps with data compression/transmission,
+                //don't know where that actually happens
+                //note on constructor, allows in one line set up starting values for properties of the object
         }
+
+        public String getName(){
+//TODOne: return the person's name
+                return name;
+                //use this.name; if other things are being defined here, works ok here
+        }
+
+        public void setName(String name){
+//TODOne: change the name property to the passed value
+                //hashing pw algorithm occurs in the setter
+                this.name = name;
+                //can call this meth in another class, can pass a string value in meth, will take the value and assign
+                        //this.name to it, controls how that var is going to change
+                //to demonstrate wanted to add some action here with name.toUpperCase();
+                        //this will cause in the constuctro to setName(name); bc it has >1 fxality
+                                //but constructors will tpyicall just have that one thing : this.name = name;
+                                //
+        }
+
+
+        public void sayHello(){//is an instance method
+                        //adding String name here does not make sense for an instance meth bc
+                        //is relying on acutal objs name, makes it more like a static bc not
+                        //depending on info from an obj
+//TODOne: print a message to the console using the person's name
+                System.out.println("Hello, " + name + "!");
+                //also did a simple msg referring name
+                //some used (this.getName() + " says hi!");
+
+                //if using a piece of data, getr makes sense;
+                // to peek in the data and not display the regular date, fine to use property directly whatever it is
+                //this.getName() is more of a peek into the data
+
+
+        }
+
+        //justin moved his contructor to the top
 
         public static void main(String[] args) {
                 Person individual1 = new Person("Don");
+                individual1.sayHello();
+                //previous cpy/pst outcomes
+                // with == illustrates that although strings are the same, they are diff objs or "Person"s by compairing the hexadecimal id's, see below how to look at them
+                //will work with this much with db's coming up here soon
+                //where Person person2 = person1; illustrates making a copy, not a whole new object
                 Person person1 = new Person("John");
                 Person person2 = person1;
                 System.out.println(person1.getName());
@@ -37,6 +70,10 @@ public class Person {
                 System.out.println(person1.getName());
                 System.out.println(person2.getName());
                 person1.sayHello();
+                System.out.println(individual1);
+                //remember this prints out the class and memory location Person@2938v9 or whatever
+                //remember if i need to use private data from another class you call the getter
+                //  and if want to manip/mutate pravite data use the setter
         }
 
 
