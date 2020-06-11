@@ -20,6 +20,7 @@ public class Circle {
         return 2 * Math.PI * radius;
     };
 
+    //BONUS    use a loop and yesNo in circleapp
 
 
     public static void main(String[] args) {

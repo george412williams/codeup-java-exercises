@@ -24,9 +24,13 @@ public class Input {
 
     }
 
+    //bonus overload getString(String prompt)...adds the prompt directly, and can remove the sout prompt
+
     public boolean yesNo() {
         //if string y or yes regardless of case needs true, else false
-        String input = getString();
+        String input = getString();//scanner.next(); this is the key!!!
+        //this condition may be failing in the bonus requirement//consiter scanner.next();
+        System.out.println(input);
         if (input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes")){
             return true;
         } else {
@@ -123,6 +127,9 @@ public class Input {
 //        double dNumInRange = in.getDouble(1, 10);
 //        System.out.println("You entered " + dNumInRange);
 
+//        BONUS - adding ability to input to output to user with prompt and expanding the class
+        //add add't params to the methods to do this, q: is this overloading? yes
+        //getString with a string
 
     }
 
