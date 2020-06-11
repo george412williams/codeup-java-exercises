@@ -49,6 +49,22 @@ public class Input {
         }
     }
 
+    public int getInt(int min, int max) {
+        //use previous work here
+        int userInt = getInt();
+        //could ask the question:
+        if (userInt >= min && userInt <= max) {
+            return userInt;
+        }else{
+            System.out.println("Please enter integer within range: " + min + " and " + max);
+            //recursion
+            return getInt(min, max);
+            //which will return ask range get, input of string will invoke getInt, sad path int input invokes range getInt
+        }
+    }
+
+    //getDouble...
+
     //public void ... need to validate users input back atem:
     public static void main(String[] args) {
         Input in = new Input();
