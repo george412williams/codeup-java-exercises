@@ -63,7 +63,25 @@ public class Input {
         }
     }
 
-    //getDouble...
+    public double getDouble() {
+        if (scanner.hasNextDouble()){
+            return scanner.nextDouble();
+        }else{
+            System.out.println("Not");
+            scanner.next();
+            return getDouble();
+        }
+    }
+
+    public double getDouble(int min, int max) {
+        double userDouble = getDouble();
+        if (userDouble >= min && userDouble <= max) {
+            return userDouble;
+        }else{
+            System.out.println("Please enter integer within range: " + min + " and " + max);
+            return getDouble(min, max);
+        }
+    }
 
     //public void ... need to validate users input back atem:
     public static void main(String[] args) {
