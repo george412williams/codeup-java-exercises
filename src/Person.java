@@ -2,7 +2,6 @@
 
 public class Person {
 
-        private String name;//instance property of name
 
 //The class should have a constructor that accepts a `String` value and sets
 //the person's name to the passed string.
@@ -16,6 +15,22 @@ public class Person {
                 // in web dev you'll see java beans that helps with data compression/transmission,
                 //don't know where that actually happens
                 //note on constructor, allows in one line set up starting values for properties of the object
+        }
+        private String name;//instance property of name
+//        // SLIDE 3
+        private String firstName;
+        private String lastName;
+//        public Integer age;
+//how do we create a person object thing?
+
+        //PERSON GETTERS
+
+        public String getFirstName(){
+                return firstName;
+        }
+
+        public String getLastName(){
+                return lastName;
         }
 
         public String getName(){
@@ -79,11 +94,6 @@ public class Person {
 
 //LECTURE NOTES:
 
-//        // SLIDE 3
-//        public String firstName;
-//        public String lastName;
-//        public Integer age;
-//how do we create a person object thing?
 
         // SLIDE 4
 
