@@ -1,5 +1,5 @@
 package arraysLecture;
-//import oopLecture.Person;
+
 import java.util.Arrays;
 
 //notes below
@@ -7,7 +7,11 @@ import java.util.Arrays;
 public class ArraysLecture {
 
 
-
+//outside of main, array meths inside class, out main, w copy +1...look to loop and do while and compare...
+    public static String[] colorsCopy(String[] array){
+        String[] newCopy = Arrays.copyOf(array, array.length + 1);//can make array with extra element at end
+        return newCopy;
+    }
 
 
 
@@ -33,7 +37,9 @@ public class ArraysLecture {
         //using initializer and put in an array literal, similar to JS object literal
             //creating array with values already inside, in JS arrays are objs and beh the same
         int[] myNumbers = {1,2,3,4,5,6,7,8,9,10};
-        int[] otherNumbers = new int[10];
+        String[] otherNumbers = {"1","2","3","4","5"};
+        //my experiment
+        int[] growNumbers = {1,2,3,4,5};
         //q; couldn't work w arrays outside of methods, y? did you make it static?
         // no, if outside main needs static to apply to all class and not just the instance of the object
         //in curric ex, casting as int bc you want whole number of bugs and the  *100); is producing a double with possibility of decimals
@@ -104,10 +110,71 @@ public class ArraysLecture {
         String[] colors = new String[7];
         //use fill to est default value
         Arrays.fill(colors, "blue");
+        //assign other default values other than null; like starting w default usernames, maybe just for visitors or whatever
         System.out.println(colors);
         //returns array memory reference
         System.out.println(Arrays.toString(colors));
         //will see what most likely is expected .toString...
+        System.out.println(Arrays.equals(myCars, theBeatles));
+        //will obv be false bc need to equal type and content
+        System.out.println((Arrays.equals(theBeatles,otherNumbers)));
+
+        //just had an idea where you loop through a loop, add a default thing compare to a longer list of the same thing and kill the loop once they are equal, like filling a container until equal...
+        //use growNumbers and maybe copyOf +1
+
+//        for (int x: myNumbers){
+//            ++x;
+//            System.out.println(x);
+//            //prints 2-11,
+//        }
+
+        //sort
+
+        for (String beatle: theBeatles){
+            Arrays.sort(theBeatles);
+            System.out.println(theBeatles);
+        }
+
+        //using instructors for adding array elements
+        //instantiating a new obj that is out of bounds, higher index than max,
+        //to include make copy
+//        Person[] oneMoreInstructor = Arrays.copyOf(instructors,4);//new length goes here
+        //instructors.length + 1 if length unknown(instead of 4 here)
+//        System.out.println(Arrays.toString(oneMoreInstructor));
+        //reference id's are same
+//        oneMoreInstructor[3] = new Person("Mike","Toomany");
+//        System.out.println(oneMoreInstructor);
+        //toString can be very important when coming to printing out vs display of the id
+
+        //if want copy of string array, what is return type String[]"String array"
+
+        //to call from outside main
+        System.out.println(Arrays.toString(colorsCopy(colors)));
+
+        //in curric ex of a matrix, 2d arrays, arrays of arrays in JS, java it is a grid w rowscolumns break down ex, iterate thru ea element first...
+        //realworld matric, 2d matrix arrays mainly used for game dev in pixel manip or animation
+            //an img is set of pix on a grid, think of chess board ref to row column, in game dev ref positions on a plain
+            //so the arrays cross to make a field with coords?
+
+        //arrays and arrays lists are diff and used differently
+
+            //in collections learn array list type, more sim to js arrays
+
+                //arraylist methods in curric familiar to JS
+                //so list is diff for a way for dev to make a more manipulation
+                //tic tac toe gets an array
+                //chess board array, no change
+                //dozen eggs, has limit of 12, array
+                //never changing vars, array
+                //grocery list, array list, always changing
+                //sophie game dev
+                    //backpack or owned chess
+                    //when aquired storage items with slot limit, array for that obj
+                    //a water container, my ex, array list for ex
+
+
+
+
 
     }
 
@@ -125,7 +192,7 @@ public class ArraysLecture {
 //    *   Java arrays are declared with a fixed length
 //    *   going beyond it give compile time error
 //    *
-//    * See live coding examples
+//    * See live coding examples in psvm
 //    *
 //    *
 //    *
