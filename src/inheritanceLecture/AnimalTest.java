@@ -2,6 +2,28 @@ package inheritanceLecture;
 
 public class AnimalTest {
 
+    //POLYMORPHISM
+    public static void makeAnimalsNoisy(Animal[] animals) {
+        for (Animal a : animals) {
+            a.makeNoise();
+        }
+    }
+    //added an override to cat @Override public void makeNoise(){sout"Meow Meow";}
+    //created cat in Cat
+    //Cat c = new Cat("Feline", 7, 9)  //age and number of lives
+    //d.makeNoise();
+    //c.makeNoise();
+    //returns their noises
+    //could we put these into an array and pass them into makeNoise method so that it will make them make noise
+
+//    Animal[] animals = new Animal[2];
+//    animals[0] = d;
+//    animals[1] = c;
+//    makeAnimalsNoisy(animals);
+//    creates array that holds any obj that extendds from animal and makes both noises
+    //we have a makeNoise we want to use across various subtypes...
+
+
 
     public static void main(String[] args) {
         Animal a = new Animal();
@@ -31,9 +53,12 @@ public class AnimalTest {
 //        d.makeGenericAnimalNoise();
         //NOTE: i changed main makeNoise meth to reflect which is being output
 
-
         //how do we make this happen since meth is in dog, not with ab
         //a.makeGenericAnimalNoise();
+
+        //at polymorphism
+        //say you have a group of animals that make a noise
+        //being able to make the outp the type of the parent makes polymorphism possible
     }
 
 }

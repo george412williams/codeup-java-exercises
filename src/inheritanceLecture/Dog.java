@@ -14,6 +14,7 @@ private String breed;
         //dog specific parameters can be made here just like breed in above
     }
 
+    //in notes, started fetchBall method to show specific example
 
     public void setBreed(String breed){
         this.breed = breed;
