@@ -16,6 +16,11 @@ public class Car extends Vehicle {
         System.out.println("Cranking engine...");
     }
 
+    public void genericTurnOn(){
+        //System.out.println("Vehicle is turning on...");
+        super.turnOn();//this is the parent reference
+    }
+
     public Car(boolean isOperable, int passengerCapacity, String powerSource, int milesPerGallon) {
         super(isOperable, passengerCapacity, powerSource);
         this.milesPerGallon = milesPerGallon;

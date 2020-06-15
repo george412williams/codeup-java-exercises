@@ -15,6 +15,11 @@ public class Jet extends Vehicle {
         System.out.println("Igniting jet engines...");
     }
 
+    public void genericTurnOn(){
+        //System.out.println("Vehicle is turning on...");
+        super.turnOn();
+    }
+
     public Jet(boolean isOperable, int passengerCapacity, String powerSource, int maximumAltitude) {
         super(isOperable, passengerCapacity, powerSource);
         this.maximumAltitude = maximumAltitude;

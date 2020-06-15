@@ -8,6 +8,7 @@ public class AnimalTest {
             a.makeNoise();
         }
     }
+    //TO CONTINUE THIS EXAMPLE:
     //added an override to cat @Override public void makeNoise(){sout"Meow Meow";}
     //created cat in Cat
     //Cat c = new Cat("Feline", 7, 9)  //age and number of lives
@@ -16,13 +17,13 @@ public class AnimalTest {
     //returns their noises
     //could we put these into an array and pass them into makeNoise method so that it will make them make noise
 
+    //ARRAYS
 //    Animal[] animals = new Animal[2];
 //    animals[0] = d;
 //    animals[1] = c;
 //    makeAnimalsNoisy(animals);
 //    creates array that holds any obj that extendds from animal and makes both noises
     //we have a makeNoise we want to use across various subtypes...
-
 
 
     public static void main(String[] args) {
