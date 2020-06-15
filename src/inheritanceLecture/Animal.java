@@ -4,6 +4,7 @@ public class Animal {
 
 //    setting up some things about Animal
     private String species;
+//    protected String species;
     private int age;
 
     //    not to create some and def public gtrs/strs and constructors
@@ -13,6 +14,10 @@ public class Animal {
         this.species = species;
         this.age = age;
 
+    }
+
+    public Animal() {
+        //made for Dog class
     }
 
 
