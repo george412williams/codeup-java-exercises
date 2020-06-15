@@ -10,6 +10,11 @@ public class Jet extends Vehicle {
 
     }
 
+    @Override
+    public void turnOn(){
+        System.out.println("Igniting jet engines...");
+    }
+
     public Jet(boolean isOperable, int passengerCapacity, String powerSource, int maximumAltitude) {
         super(isOperable, passengerCapacity, powerSource);
         this.maximumAltitude = maximumAltitude;

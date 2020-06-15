@@ -14,6 +14,10 @@ public class Vehicle {
 
     }
 
+    public void turnOn(){
+        System.out.println("Vehicle is turn on...");
+    }
+
     public boolean isOperable() {
         return isOperable;
     }

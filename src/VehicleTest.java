@@ -1,6 +1,12 @@
 public class VehicleTest {
 
 
+    public static void turnOnVehicles(Vehicle[] vehicles){
+        for (Vehicle v : vehicles) {
+            v.turnOn();
+        }
+    }
+
     public static void main(String[] args) {
         Vehicle v = new Vehicle();
         Car car = new Car();
@@ -16,7 +22,11 @@ public class VehicleTest {
         j.setPowerSource("gas-combustion");
 //        System.out.println(v.toString());
 //        System.out.println(car.toString());
-        System.out.println(j.toString());
+//        System.out.println(j.toString());
+        Vehicle[] vehicles = new Vehicle[2];
+        vehicles[0] = j;
+        vehicles[1] = car;
+        turnOnVehicles(vehicles);
     }
 
 }

@@ -11,6 +11,11 @@ public class Car extends Vehicle {
 
     }
 
+    @Override
+    public void turnOn() {
+        System.out.println("Cranking engine...");
+    }
+
     public Car(boolean isOperable, int passengerCapacity, String powerSource, int milesPerGallon) {
         super(isOperable, passengerCapacity, powerSource);
         this.milesPerGallon = milesPerGallon;

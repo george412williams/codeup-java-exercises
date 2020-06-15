@@ -54,7 +54,7 @@ public class AnimalTest {
         //NOTE: i changed main makeNoise meth to reflect which is being output
 
         //how do we make this happen since meth is in dog, not with ab
-        //a.makeGenericAnimalNoise();
+        //ab.makeGenericAnimalNoise();
 
         //at polymorphism
         //say you have a group of animals that make a noise
