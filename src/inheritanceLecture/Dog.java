@@ -8,6 +8,7 @@ public class Dog extends Animal{
     public static void main(String[] args) {
         Dog d = new Dog();
         //check the link:
+        d.setSpecies("Canine");
         System.out.println(d.getSpecies());
             //public things are inherited, so getSpecies is inheritable....
         //switched to protected in Animal, accessed but null until set
