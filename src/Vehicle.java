@@ -38,12 +38,13 @@ public class Vehicle {
         this.powerSource = powerSource;
     }
 
-    @Override
-    public String toString() {
-        return "Vehicle{" +
-                "isOperable=" + isOperable +
-                ", passengerCapacity=" + passengerCapacity +
-                ", powerSource='" + powerSource + '\'' +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Vehicle{" +
+//                "isOperable=" + isOperable +
+//                ", passengerCapacity=" + passengerCapacity +
+//                ", powerSource='" + powerSource + '\'' +
+//                '}';
+//    }
+
 }
