@@ -70,4 +70,5 @@ public class Animal {
                 ", age=" + age +
                 '}';
     }
+    //next will learn how to add special particular things to the new classes
 }
