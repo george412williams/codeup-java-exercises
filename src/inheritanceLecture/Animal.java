@@ -17,13 +17,19 @@ public class Animal {
     }
 
     public Animal() {
-        //made for Dog class
+        //made for Dog class initially
     }
+
+    //making a new child class; wi package, extends Animal{,
+    //next after new vars, constructor, will need to use
+    //super(param, param, etcparam); followed by new params:
+    //this.noOfLivesLeft = noOfLivesLeft;
 
     public void makeNoise() {
         System.out.println("This animal, " + this + ", is making some noise...");
         //added this to identify ea obj, will use overrides in order to get the animals
         //to make their specific noises
+
     }
 
 
@@ -42,6 +48,7 @@ public class Animal {
     public void setAge(int age) {
         this.age = age;
     }
+
 
     public static void main(String[] args) {
         Animal a = new Animal("Primate", 7);
@@ -71,4 +78,5 @@ public class Animal {
                 '}';
     }
     //next will learn how to add special particular things to the new classes
+
 }
