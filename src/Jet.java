@@ -21,7 +21,6 @@ public class Jet extends Vehicle {
 
     //gtrs/strs
 
-
     public int getMaximumAltitude() {
         return maximumAltitude;
     }

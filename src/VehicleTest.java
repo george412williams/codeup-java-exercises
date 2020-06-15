@@ -14,8 +14,8 @@ public class VehicleTest {
         j.setOperable(true);
         j.setPassengerCapacity(16);
         j.setPowerSource("gas-combustion");
-        System.out.println(v.toString());
-        System.out.println(car.toString());
+//        System.out.println(v.toString());
+//        System.out.println(car.toString());
         System.out.println(j.toString());
     }
 
