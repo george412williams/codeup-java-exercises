@@ -18,7 +18,8 @@ public class Animal {
     }
 
     public Animal() {
-        //made for Dog class initially
+        //made for Dog class initially bc it extends Animal
+        //and requires the empty/default constructor
     }
 
     //making a new child class; wi package, extends Animal{,
