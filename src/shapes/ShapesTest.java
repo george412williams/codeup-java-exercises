@@ -5,15 +5,22 @@ public class ShapesTest {
 
 
     public static void main(String[] args) {
-        Rectangle box1 = new Rectangle();
-        box1.setLength(5);
-        box1.setWidth(4);
+        Rectangle box1 = new Rectangle(5,4);
+//        box1.setLength(5);
+//        box1.setWidth(4);
         //System.out.println(box1);
-        box1.getArea(5,4);
-        box1.getPerimeter(5,4);
-        Rectangle box2 = new Square();
-        box2.getPerimeter(5, 5);
-        box2.getArea(5, 5);
+        System.out.println(box1.getPerimeter());
+        System.out.println(box1.getArea());
+        //sets us up for polymorphism, can instantiate and store in a new object in one place
+        //important so you can deal with it in more general way, flexible
+        //remember: here a square is a kind of rect, not other way around
+            //rev of parent/child rel
+        Rectangle box2 = new Square(5);
+        System.out.println(box2);
+        System.out.println(box2.getPerimeter());
+        System.out.println(box2.getArea());
+
+
 
 
 

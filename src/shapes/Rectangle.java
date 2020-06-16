@@ -3,11 +3,12 @@ package shapes;
 public class Rectangle {
 
     //ARGUMENTS
-    protected int length;
-    protected int width;
+        //changed from int to allow decimals for later use
+    protected double length;
+    protected double width;
 
     //CONSTRUCTORS
-    public Rectangle(int length, int width){
+    public Rectangle(double length, double width){
         this.length = length;
         this.width = width;
     }
@@ -16,27 +17,27 @@ public class Rectangle {
     }
 
     //METHODS
-    public void getPerimeter(int length, int width){
-        int perimeter = (2 * length) + (2 * width);
-        System.out.println("Perimeter: " + perimeter);
+    //they don't take any args bc rely on the obj properties
+    //if static methods then yes use params, here just getting info
+    public double getPerimeter(){
+        return (2 * length) + (2 * width);
     }
 
-    public void getArea(int length, int width){
-        int area = length * width;
-        System.out.println("Area: " + area);
+    public double getArea(){
+        return length * width;
     }
 
     //GETSET
-    public int getLength(){
+    public double getLength(){
         return length;
     }
-    public int getWidth() {
+    public double getWidth() {
         return width;
     }
-    public void setLength(int length) {
+    public void setLength(double length) {
         this.length = length;
     }
-    public void setWidth(int width) {
+    public void setWidth(double width) {
         this.width = width;
     }
 

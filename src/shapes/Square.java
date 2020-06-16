@@ -3,25 +3,30 @@ package shapes;
 public class Square extends Rectangle {
     //NOTE: added empty/default constructor to Rectangle to enable
 
-    private int side;
+    private double side;
 
-    public Square(int side){
-        this.side = side;
-        super.length = side;
-        super.width = side;
+    public Square(double side){
+        super(side, side);
+//        this.side = side;
+//        super.length = side;
+//        super.width = side;
     }
 
-    public Square(){
+    //don't need bc of initial made constructor
+//    public Square(){
+//
+//    }
 
+    //Needed to refactor to get correct bc i was using side
+    @Override
+    public double getArea() {
+        System.out.println("test: in square");
+        return Math.pow(width, 2);
     }
 
     @Override
-    public void getArea(int length, int width) {
-        super.getArea(length, width);
-    }
-
-    @Override
-    public void getPerimeter(int length, int width) {
-        super.getPerimeter(length, width);
+    public double getPerimeter() {
+        System.out.println("test: in square");
+        return 4 * width;
     }
 }
