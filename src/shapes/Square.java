@@ -1,6 +1,6 @@
 package shapes;
 
-public class Square extends Rectangle {
+public class Square extends Quadrilateral {
     //NOTE: added empty/default constructor to Rectangle to enable
 
     private double side;

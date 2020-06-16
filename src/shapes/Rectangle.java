@@ -1,6 +1,6 @@
 package shapes;
 
-public class Rectangle {
+public class Rectangle extends Quadrilateral implements Measurable{
 
     //ARGUMENTS
         //changed from int to allow decimals for later use
