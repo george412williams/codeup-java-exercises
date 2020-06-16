@@ -26,6 +26,8 @@ abstract class Animal {
     //can dogs fly? walk?
     //interfaces come in handy here w more specific implementation
     //don't have to worry about how obs are created
+    //public abstract void adopt();
+        //instead take this one to an interface
 
 
 }
