@@ -1,3 +1,6 @@
+package abstractLecture;
+
+//add blender and another to complete
 abstract class Appliance {
 
     String brand;
@@ -6,14 +9,15 @@ abstract class Appliance {
     public Appliance(){
 
     }
-
-    public abstract void makeSound();
-    public abstract void doWork();
-
+//instru used myBrand etc, i assume to better track
     public Appliance(String brand, String color){
         this.brand = brand;
         this.color = color;
     }
+
+    public abstract void makeSound();
+    public abstract void doWork();
+
 
     public String getBrand() {
         return brand;

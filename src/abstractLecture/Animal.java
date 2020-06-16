@@ -20,6 +20,12 @@ abstract class Animal {
     public abstract void sleep();
     //if you put in {} that indicate an implementation it faults, see above
     //now lets extend them, create new class, a dog
+    public abstract void walk();
+    public abstract void swim();
+    public abstract void fly();
+    //can dogs fly? walk?
+    //interfaces come in handy here w more specific implementation
+    //don't have to worry about how obs are created
 
 
 }

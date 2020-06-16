@@ -1,13 +1,15 @@
+package abstractLecture;
+
 public class Refrigerator extends Appliance {
 
     public Refrigerator(String brand, String color){
-        this.brand = brand;
-        this.color = color;
+        super(brand, color);
+            //default to parent
     }
-
-    public Refrigerator(){
-
-    }
+//
+//    public Refrigerator(){
+//
+//    }
 
     @Override
     public void makeSound() {

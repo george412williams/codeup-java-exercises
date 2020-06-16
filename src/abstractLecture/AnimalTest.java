@@ -11,5 +11,6 @@ public class AnimalTest {
         //its because we need more specific ref's to class
         //can do tho: Animal myAnimal = new Dog(); bc it is not abstract
             //just falls under the abstract Animal type, you'll never meet 'human'
+
     }
 }
