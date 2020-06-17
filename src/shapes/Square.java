@@ -7,9 +7,7 @@ public class Square extends Quadrilateral {
 
     public Square(double side){
         super(side, side);
-//        this.side = side;
-//        super.length = side;
-//        super.width = side;
+
     }
 
     //don't need bc of initial made constructor
