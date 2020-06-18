@@ -6,8 +6,19 @@ public class ShapesTest {
 
     public static void main(String[] args) {
 
-        Measurable myShape = new Square(5);
+        Measurable myShape = new Square(6);
         Measurable r1 = new Rectangle(5,4);
+
+        //outputs
+        System.out.println(myShape.getArea());
+        System.out.println(myShape.getPerimeter());
+        System.out.println(r1.getArea());
+        System.out.println(r1.getPerimeter());
+
+        //last q
+        //System.out.println(myShape.getLength);
+            //type is Measurable and will fail here
+            //bc
 
 
 

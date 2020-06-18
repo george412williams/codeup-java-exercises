@@ -10,6 +10,19 @@ public class Square extends Quadrilateral {
 
     }
 
+    //ctrl enter implement
+
+    @Override
+    public void setLength(double length) {
+        this.length = length;
+    }
+
+    @Override
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+
     //don't need bc of initial made constructor
 //    public Square(){
 //
@@ -19,12 +32,13 @@ public class Square extends Quadrilateral {
     @Override
     public double getArea() {
         System.out.println("test: in square");
-        return Math.pow(width, 2);
+        return Math.pow(this.width, 2);
+        //this.length * this.length //this in order to be more specific
     }
 
     @Override
     public double getPerimeter() {
         System.out.println("test: in square");
-        return 4 * width;
+        return 4 * this.width;
     }
 }
