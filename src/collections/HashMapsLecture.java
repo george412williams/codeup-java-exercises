@@ -36,7 +36,8 @@ public class HashMapsLecture {
         //duplicate keys are not legal here, explain, self;
             //in actual app, use containsKey to check for users trying to make unique un's
         userIds.putIfAbsent("gwilli",5);
-        System.out.println(userIds.get("gwilli"));
+        userIds.putIfAbsent("gwillie",5);
+        System.out.println(userIds.get("gwillie"));
             //in curric, shows how this assures unique keys
         System.out.println("isEmpty give boolean: " + userIds.isEmpty());
         System.out.println("isEmpty give boolean: " + horses.isEmpty());
