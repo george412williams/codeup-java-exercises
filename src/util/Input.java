@@ -39,13 +39,10 @@ public class Input {
     }
 
     public int getInt() {
-//        getString();
-//        Integer.valueOf(String s);
-//        return getInt();
         try{
             return Integer.valueOf(getString());
         }catch (NumberFormatException e) {
-            System.out.println("not num");
+            System.out.println("This is not a whole number. Try again: ");
             return getInt();
         }
 //        //if user input !num prompt to correct, loop or recursion? recursion easier to read
@@ -63,9 +60,7 @@ public class Input {
     }
 
     public int getInt(int min, int max) {
-        //use previous work here
         int userInt = getInt();
-        //could ask the question:
         if (userInt >= min && userInt <= max) {
             return userInt;
         }else{
@@ -80,7 +75,7 @@ public class Input {
         try{
             return Integer.valueOf(getString());
         }catch (NumberFormatException e) {
-            System.out.println("not double num");
+            System.out.println("Not the correct type. Try again: ");
             return getDouble();
         }
     }
