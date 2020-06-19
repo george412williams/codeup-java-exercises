@@ -39,18 +39,27 @@ public class Input {
     }
 
     public int getInt() {
-        //if user input !num prompt to corret, loop or recursion? recursion easier to read
-        if (scanner.hasNextInt()){
-            //System.out.println("Is int");
-            return scanner.nextInt();
-        } else {
-            //System.out.println("Not an int");
-            //can call meth over again
-            System.out.println("Invalid input enter valid integer: ");
-            scanner.next();//i've needed this several time, it moves scanner obj forward
-                            //allowing to go backk up and ask for antoher nubmer input
+//        getString();
+//        Integer.valueOf(String s);
+//        return getInt();
+        try{
+            return Integer.valueOf(getString());
+        }catch (NumberFormatException e) {
+            System.out.println("not num");
             return getInt();
         }
+//        //if user input !num prompt to correct, loop or recursion? recursion easier to read
+//        if (scanner.hasNextInt()){
+//
+//            return scanner.nextInt();
+//        } else {
+//
+//            System.out.println("Invalid input enter valid integer: ");
+//            scanner.next();
+//            //i've needed this several time, it moves scanner obj forward
+//                            //allowing to go back up and ask for antoher nubmer input
+//            return getInt();
+//        }
     }
 
     public int getInt(int min, int max) {
@@ -68,11 +77,10 @@ public class Input {
     }
 
     public double getDouble() {
-        if (scanner.hasNextDouble()){
-            return scanner.nextDouble();
-        }else{
-            System.out.println("Not");
-            scanner.next();
+        try{
+            return Integer.valueOf(getString());
+        }catch (NumberFormatException e) {
+            System.out.println("not double num");
             return getDouble();
         }
     }
@@ -110,7 +118,7 @@ public class Input {
         //will continue to ask until integer
         //explain the stack overflow error again:
             //he got it
-            //we only move the ... forward inthe happy path
+            //we only move the program forward in the happy path
             //if there is anything else in the scanner already will not move forward
             //call getint in the negagive, so scanner.next(); added
 
