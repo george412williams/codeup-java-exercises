@@ -18,7 +18,7 @@ public class Student {
 
     //need public Student class!!!!!!!!
 
-    this.grades = ArrayList<Integer>
+    //this.grades = ArrayList<Integer>
 
     private String name;
     private int grade;
@@ -57,7 +57,7 @@ public class Student {
     }
 
     public String GradesApplication(){
-
+        return name;
     }
 
 

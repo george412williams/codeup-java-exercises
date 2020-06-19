@@ -9,6 +9,7 @@ public class ExceptionLecture {
 //        throw new RuntimeException("Something went wrong");
 
 //        String[] names = {"cathy", "bob"};
+        //trying to access an non-exist index: Index 10 out of bounds for length 2
 //        System.out.println(names[10]);
 
 //        int x = 3;
@@ -16,9 +17,29 @@ public class ExceptionLecture {
 //
 //        System.out.println(x / y);
 //
-//        throw new ArithmeticException("Cannot divide by zero");
+        throw new ArithmeticException("Cannot divide by zero");
 
         // Exceptions may be thrown
+
+        //checked exception
+        //throw new Exception("Uh oh");
+            //not allowing a run
+        //needs try catch
+//        try {
+//            throw new Exception ("Uh Oh");
+//        } catch(Exception e) {
+//            e.printStackTrace();
+//            //could do anything else here to keep prog running
+//        }
+
+        //here's another: throw new SQLException("Something went wrong");
+            //could to try catch
+//            ...}catch(SQL..e) {
+//                throw new RuntimeException("Error occured when adding a record");
+//        }
+        //can stop prog alltogether w runtimeexception and immediately if dev on an app:
+        //be able to see the problem is happening for sure on "adding a record" if stopping prog there to know for sure, good
+        //imp to remember checked exception must handle then (trycatch it)
 
 //        try {
 //            throw new Exception("Something went wrong");
