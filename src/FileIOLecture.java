@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -9,7 +10,11 @@ import java.util.List;
 public class FileIOLecture {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException{
+                                            //this throws first needed instance is the enhanced for loops example
+                                            //try catch is better at least to show that you id'd a specific exception
+                                            //and are directly targeting it, so as to allow the ability to id other
+                                            //exceptions that will arise elsewhere that may require a different approach
 
     //grab a dir and see if it exists
     Path myDirectory = Paths.get("src");
@@ -87,10 +92,41 @@ public class FileIOLecture {
             //readalllines is assuming we don't have a copy of the list, or know what is inside that list
                 //can think of it as start w original list, its updated, readalllines to get updated
 
-            //enhanced for loop:
-            //for(String student : myStudents){
-            //System.out.println(student); }
         }
+            //enhanced for loop:
+            List<String> myStudents = Files.readAllLines(helloFile);
+            for(String student : myStudents){
+            System.out.println(student); }
+
+            //Add line to exist file
+//            Files.write(
+//                    helloFile, Arrays.asList("Ramon"), StandardOpenOption.APPEND);
+            //or
+            String newStudent = "Ramon";
+            List<String> newStudents = Arrays.asList("Dan","Justin","Julia");
+            Files.write(helloFile, newStudents, StandardOpenOption.APPEND);
+
+            //curric example; how replace certain line in text file instead of append/overwriting
+                //not list modify, code makes new list that we write to file, a mod'd cpy, overwritten
+                //iterating thru lines list
+
+            //at this point myStudents is a full list
+                //empty the arraylist with
+
+            List<String> newClass = new ArrayList<>();
+
+            for(String student : myStudents){
+                //replace name
+                if (student.equals("Dan")){
+                    newClass.add("Phil");
+                    continue;
+                }
+                newClass.add(student);
+                //don't add dan, add phil
+                //before it changes need write to file
+                Files.write(helloFile,newClass);
+                System.out.println(newClass);
+            }
 
 
     }
