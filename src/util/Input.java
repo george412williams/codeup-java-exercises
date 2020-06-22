@@ -39,22 +39,30 @@ public class Input {
     }
 
     public int getInt() {
+      //Instructor initial(you see the exception:
+//        String userInput = getString();
+//            //can this input be
+//        int userInt = Integer.valueOf(userInput);
+//        return userInt;
+
         try{
             return Integer.valueOf(getString());
+            //redundant bc knows that there are extra things going on under the hood that may be unnecessary
+                //and thinks parseInt() would be better used here at least
         }catch (NumberFormatException e) {
-            System.out.println("This is not a whole number. Try again: ");
+            System.out.println("This is not valid input. Try again: ");
             return getInt();
         }
+
+        //PRIOR CONDITIONAL LOGIC USED:
 //        //if user input !num prompt to correct, loop or recursion? recursion easier to read
 //        if (scanner.hasNextInt()){
-//
 //            return scanner.nextInt();
 //        } else {
-//
 //            System.out.println("Invalid input enter valid integer: ");
 //            scanner.next();
 //            //i've needed this several time, it moves scanner obj forward
-//                            //allowing to go back up and ask for antoher nubmer input
+//                            //allowing to go back up and ask for another number input
 //            return getInt();
 //        }
     }
@@ -72,8 +80,11 @@ public class Input {
     }
 
     public double getDouble() {
+        //String userInput = getString();
         try{
             return Integer.valueOf(getString());
+            //redundant bc knows that there are extra things going on under the hood that may be unnecessary
+                //and thinks parseInt() would be better used here at least
         }catch (NumberFormatException e) {
             System.out.println("Not the correct type. Try again: ");
             return getDouble();
@@ -91,6 +102,9 @@ public class Input {
     }
 
     //public void ... need to validate users input back atem:
+
+        //===TEST AREA===
+
     public static void main(String[] args) {
         Input in = new Input();
 //        say want user to enter in fav word to test
@@ -105,11 +119,13 @@ public class Input {
 //        boolean yesNo = in.yesNo();
 //        System.out.println(yesNo);
 
+
+        //INTEGER
         //getInt is important lesson on avoiding the stack overflow error
-        System.out.print("Please enter a whole number: ");
-        in.getInt();
-        int num = in.getInt();//will create this meth accepting only a valid integer
-        System.out.println("You entered: " + num);
+//        System.out.print("Please enter a whole number: ");
+//        int num = in.getInt();
+//            //will create this meth accepting only a valid integer
+//        System.out.println("You entered: " + num);
         //will continue to ask until integer
         //explain the stack overflow error again:
             //he got it
@@ -117,20 +133,23 @@ public class Input {
             //if there is anything else in the scanner already will not move forward
             //call getint in the negagive, so scanner.next(); added
 
-        //range input validator
+        //INT RANGE
 //        System.out.print("Please enter a whole number between 1 and 10: ");
 //        int numInRange = in.getInt(1, 10);//like the dice ex
 //        System.out.println("You entered " + numInRange);
 
-//        System.out.print("Please enter a number");
-//        double dNum = in.getDouble();
-//        System.out.println("You entered: " + dNum);
 
+        //DOUBLE
+        System.out.print("Please enter a number");
+        double dNum = in.getDouble();
+        System.out.println("You entered: " + dNum);
+
+        //DOUBLE RANGE
 //        System.out.print("Please enter a whole number between 1 and 10: ");
 //        double dNumInRange = in.getDouble(1, 10);
 //        System.out.println("You entered " + dNumInRange);
 
-//        BONUS - adding ability to input to output to user with prompt and expanding the class
+        //BONUS - adding ability to input to output to user with prompt and expanding the class
         //add add't params to the methods to do this, q: is this overloading? yes
         //getString with a string
 
