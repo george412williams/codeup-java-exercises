@@ -81,8 +81,6 @@ public class FileIOLecture {
 
             //read from file (assign to a List, takes in path and )
 
-            //List<String> studentRoster = Files.readAllLines()
-
         try {
             List<String> studentRoster = Files.readAllLines(helloFile);
             System.out.println(studentRoster);
