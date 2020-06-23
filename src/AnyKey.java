@@ -32,6 +32,9 @@ public class AnyKey {
         try{        System.in.read();}catch(Exception e){	e.printStackTrace();}
         return checkCoreTemperature();
     }
+    //todo: arraylist of all possible allowable key presses, research all acceptable key presses for java
+
+    //
 
     public static void doWorkHomer() {
         String userInput;
